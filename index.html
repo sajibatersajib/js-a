@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    
+    <!-- fonts-awesome link start here -->
+     <link rel="stylesheet" href="css/all.min.css">
+     <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- css & bootstrap link start here -->
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- css & bootstrap link end here -->
+    <!-- fonts link start here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>JS/JQ</title>
+    
+</head>
+<body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <h2>No:1 click the button to show the Date</h2>
+          <button type="button" onclick="showDate()" class="btn btn-primary">Show Date</button>
+          <p id="sd"> Show Date- </p>
+          <hr>
+
+          <h2>No:2 click the button to show the Text</h2>
+          <button type="button" onclick="showText()" class="btn btn-danger">Show Text</button>
+          <p id="tt"></p>
+          <hr>
+
+          <h2>No:3 click the button to show the Text</h2>
+          <button type="button" onclick="changeText()" class="btn btn-primary">Change Text</button>
+          <p id="ct">Change Text here</p>
+          <hr>
+
+          <h2>No:4 click the button to on/off the bulb</h2>
+          <button type="button" onclick="bulbOn()" class="btn btn-danger">Turn on the Bulb</button>
+          <img id="b_img" src="img/bulboff.gif" alt="js">
+          <button type="button" onclick="bulbOff()" class="btn btn-danger">Turn off the Bulb</button>
+          <hr>
+
+          <h2>No:5 click the button to change the bg_color</h2>
+          <button type="button" onclick="changeColor()" class="btn btn-primary">Change Bg_color</button>
+          <h3 id="cc">Lorem ipsum dolor sit amet.</h3>
+          <hr>
+
+          <h2>No:6 click the button to change the text_color</h2>
+          <button type="button" onclick="textColor()" class="btn btn-danger">Change Text_Color</button>
+          <h3 id="tc">Lorem ipsum dolor sit amet.</h3>
+          <hr>
+
+          <h2>No:7 click the button to change the fontsize</h2>
+          <button type="button" onclick="fontSize()" class="btn btn-primary">Change font_Size</button>
+          <h3 id="fs">Lorem ipsum dolor sit amet.</h3>
+          <hr>
+
+          <h2>No:8 click the button to Show/Hide</h2>
+          <button type="button" onclick="showText1()" class="btn btn-primary">Show Text</button>
+          <button type="button" onclick="hideText()" class="btn btn-primary">Hide Text</button>
+          <h3 id="SoHi">Lorem ipsum dolor sit amet.</h3>
+          <hr>
+          <!-- js Output -->
+          <h2>No:9 click the button to change the Text</h2>
+          <button type="button" onclick="chngText()" class="btn btn-primary">inner_html</button>
+          <p id="inht"></p>
+          <hr>
+
+          <h2>No:10 click the button to show the result</h2>
+          <button type="button" onclick="document.write(5+6);" class="btn btn-primary">5+6</button> 
+          <hr>
+
+          <h2>No:11 click the button to show the result</h2>
+          <button type="button" onclick="window.print();" class="btn btn-primary">Print</button> 
+          <hr>
+
+          <h2>No:12 click the button to find hr</h2>
+          <button type="button" onclick="hrNumber()" class="btn btn-primary">Find hr</button>
+          <hr>
+
+          <h2>No:13 click the button to find h3</h2>
+          <button type="button" onclick="h3Number()" class="btn btn-primary">Find h3</button>
+          <hr>
+
+          <h2>No:14 click the button to find btn class</h2>
+          <button type="button" onclick="btnNumber()" class="btn btn-primary">Find btn</button>
+          <hr>
+
+          <h2>No:15 class to generate a output</h2>
+          <button type="button" onclick="cName()" class="btn btn-primary">Class Name</button>
+          <h4 class="h4">Lorem ipsum dolor sit amet.</h4>
+          <h4 class="h4">Lorem ipsum dolor sit amet.</h4>
+          <h4 class="h4">Lorem ipsum dolor sit amet.</h4>
+          <h4 class="h4">Lorem ipsum dolor sit amet.</h4>
+          <hr>
+
+          <h2>No:16 querryselector all</h2>
+          <button type="button" onclick="qrySelector()" class="btn btn-primary">All query</button>
+          <h2 class="qry">Lorem ipsum dolor sit amet.</h2>
+          <p class="qry">Lorem ipsum dolor sit amet.</p>
+          <hr>
+
+          <h2>No:17 click the button to the sum</h2>
+          <button type="button" onclick="showResult1()" class="btn btn-primary">show Result</button>
+          <p id="SR1"></p>
+          <hr>
+
+          <h2>No:18 click the button to show the text</h2>
+          <button type="button" class="btn btn-danger" onclick="myFunction()">Click Me!</button>
+          <p id="demo1"></p>
+          <p id="demo2"></p>
+          <hr>
+
+          <h2>No:19 click the button to the text with var store</h2>
+          <button type="button" onclick="varOutput()" class="btn btn-primary">Var store</button>
+          <h3 id="ot">Output-</h3>
+          <hr>
+
+          <h2>No:20 click the button to the text with var store repeat</h2>
+          <button type="button" onclick="varOutput1()" class="btn btn-primary">Var store repeat</button>
+          <h3 id="otr">Output-</h3>
+          <hr>
+
+          <h2>No:21 click the button to work operator & variable</h2>
+          <button type="button" onclick="aOp()" class="btn btn-primary">Arithmatic output</button>
+          <h3 id="re">The result  is-</h3>
+          <hr>
+
+          <h2>No:22 click the button to work operator & variable</h2>
+          <button type="button" onclick="aOp1()" class="btn btn-primary">Arithmatic output</button>
+          <h3 id="re1">The result  is-</h3>
+          <hr>
+
+          <h2>No:23 click the button to work operator & variable</h2>
+          <button type="button" onclick="aOp2()" class="btn btn-primary">Arithmatic output</button>
+          <h3 id="re2">The result  is-</h3>
+          <hr>
+
+          <h2>No:24 click the button to work operator & variable</h2>
+          <button type="button" onmouseout="aOp3()" class="btn btn-danger">Arithmatic output</button>
+          <h3 id="re3">The result  is-</h3>
+          <hr>
+
+          <h2>No:25 click the button to work operator & variable</h2>
+          <button type="button" onmouseover="aOp4()" class="btn btn-danger">Arithmatic output</button>
+          <h3 id="re4">The result  is-</h3>
+          <hr>
+          
+          <h2>No:26 click the button to show using of array</h2>
+          <button type="button" onclick="showArray()" class="btn btn-danger">Array</button>
+          <h3 id="arr">The result  is-</h3>
+          <hr>
+
+          <h2>No:27 click the button to show using of array</h2>
+          <button type="button" onclick="showArray1()" class="btn btn-danger">Array</button>
+          <h3 id="arr1">The result  is-</h3>
+          <hr>
+          
+          <h2>No:28 click the button to show using of array</h2>
+          <button type="button" onclick="showArray2()" class="btn btn-danger">Array</button>
+          <h3 id="arr2">The result  is-</h3>
+          <hr>
+
+          <h2>No:29 click the button to show using of array</h2>
+          <button type="button" onclick="showArray3()" class="btn btn-danger">Array</button>
+          <h3 id="arr3">The result  is-</h3>
+          <hr>
+
+          <h2>No:30 click the button to show using of array</h2>
+          <button type="button" onclick="showArray4()" class="btn btn-danger">Name</button>
+          <h3 id="arr4">The result  is-</h3>
+          <hr>
+
+        </div>
+      </div>
+    
+    </div>
+
+
+
+    <!-- js link start here -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- js link end here -->
+</body>
+</html>
